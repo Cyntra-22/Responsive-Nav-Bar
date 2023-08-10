@@ -37,19 +37,30 @@
         <li><a href="#" class="action_btn">Get Started</a></li>
       </div>
     </header>
+    <main id="hero_section">
+      <h1>
+        Welcome
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, eum.
+          Exercitationem dolore, perferendis nulla et quia illum incidunt
+          repudiandae error dignissimos ipsa rerum similique consequatur
+          quibusdam doloribus id nemo soluta.
+        </p>
+      </h1>
+    </main>
     <script>
-      const toggleBtn = document.querySelector('.toggle_btn');
-      const toggleBtnIcon = document.querySelector('.toggle_btn i');
-      const dropdownMenu = document.querySelector('.dropdown_menu');
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropdownMenu = document.querySelector(".dropdown_menu");
 
       toggleBtn.onclick = function () {
-        dropdownMenu.classList.toggle('open')
-        const isOpen = dropdownMenu.classList.contains('open')
+        dropdownMenu.classList.toggle("open");
+        const isOpen = dropdownMenu.classList.contains("open");
 
         toggleBtnIcon.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
-      }
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
     </script>
   </body>
 </html>
